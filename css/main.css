@@ -1,8 +1,13 @@
 iframe {
     width: 100%;
-    height: 81.6vh;
-    margin: 25px auto 0px;
+    height: 230vh;
+    margin: 0px auto;
     /* border: 3px solid #1D2939; */
     border: none;
     border-radius: 10px;
+}
+
+img#logo {
+    width: 200px;
+    height: 75px;
 }
