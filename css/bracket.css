@@ -13945,7 +13945,7 @@ textarea.parsley-success:focus {
 }
 
 /* ##### EMAIL PAGE ##### */
-.email {
+/* .email { */
   /*
   &.expand-menu {
     .br-subleft { left: 30px; }
@@ -13953,7 +13953,7 @@ textarea.parsley-success:focus {
     .br-header-left .input-group { width: 190px; }
     .br-mailbox-body { margin-left: 570px; }
   }*/
-}
+/* } */
 .email.collapsed-menu .br-subleft {
   left: 60px;
 }
@@ -47570,7 +47570,7 @@ a.hover-white-8:hover, a.hover-white-8:focus {
 }
 
 .tx-spacing-7 {
-  letter-spacign: 3.5px;
+  letter-spacing: 3.5px;
 }
 
 .tx-spacing-8 {
