@@ -1,13 +1,34 @@
-iframe {
+/* Variables de color */
+:root {
+    --primary: #008E5A;
+    --light: #03af70;
+    --dark: #005234;
+}
+
+/* Logotipo en Navbar (Left sidebar) */
+img#logo {
+    width: 150px;
+    height: 65px;
+}
+
+/* Iframes */
+iframe#cfe, iframe {
     width: 100%;
-    height: 230vh;
-    margin: 0px auto;
-    /* border: 3px solid #1D2939; */
+    height: 150vh;
+    margin: 30px auto;
     border: none;
     border-radius: 10px;
 }
 
-img#logo {
-    width: 200px;
-    height: 75px;
+/* Left Sidebar */
+.br-sideleft{
+    background-image: linear-gradient(120deg, var(--dark) 0%, var(--primary) 100%);
+}
+
+.br-menu-link.active {
+    background: var(--light) !important;
+}
+
+.br-menu-link:hover, .br-menu-link:focus {
+    background: var(--primary) !important;
 }
