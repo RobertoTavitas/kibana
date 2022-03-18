@@ -12,8 +12,6 @@
   // when top level menu have a class of .show-sub
   $('.show-sub + .br-menu-sub').slideDown();
 
-
-
   // This will collapsed sidebar menu on left into a mini icon menu
   $('#btnLeftMenu').on('click', function(){
     var menuText = $('.menu-item-label,.menu-item-arrow');
@@ -42,8 +40,6 @@
     }
     return false;
   });
-
-
 
   // This will expand the icon menu when mouse cursor points anywhere
   // inside the sidebar menu on left. This will only trigget to left sidebar
@@ -76,8 +72,6 @@
     }
   });
 
-
-
   // This will show sub navigation menu on left sidebar
   // only when that top level menu have a sub menu on it.
   $('.br-menu-link').on('click', function(){
@@ -105,8 +99,6 @@
     }
   });
 
-
-
   // This will trigger only when viewed in small devices
   // #btnLeftMenuMobile element is hidden in desktop but
   // visible in mobile. When clicked the left sidebar menu
@@ -116,16 +108,12 @@
     return false;
   });
 
-
-
   // This is the right menu icon when it's clicked, the
   // right sidebar will appear that contains the four tab menu
   $('#btnRightMenu').on('click', function(){
     $('body').addClass('show-right');
     return false;
   });
-
-
 
   // This will hide sidebar when it's clicked outside of it
   $(document).on('click', function(e){
@@ -148,51 +136,10 @@
     }
   });
 
-
-
-  // displaying time and date in right sidebar
-  var interval = setInterval(function() {
-    var momentNow = moment();
-    $('#brDate').html(momentNow.format('MMMM DD, YYYY') + ' '
-      + momentNow.format('dddd')
-      .substring(0,3).toUpperCase());
-      $('#brTime').html(momentNow.format('hh:mm:ss A'));
-  }, 100);
-
-  // Datepicker
-  if($().datepicker) {
-    $('.form-control-datepicker').datepicker()
-      .on("change", function (e) {
-        console.log("Date changed: ", e.target.value);
-    });
-  }
-
-
-
-  // custom scrollbar style
-  $('.overflow-y-auto').perfectScrollbar();
-
-  // jquery ui datepicker
-  $('.datepicker').datepicker();
-
-  // switch button
-  $('.switch-button').switchButton();
-
-  // peity charts
-  $('.peity-bar').peity('bar');
-
   // highlight syntax highlighter
   $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
   });
-
-  // Initialize tooltip
-  $('[data-toggle="tooltip"]').tooltip();
-
-  // Initialize popover
-  $('[data-popover-color="default"]').popover();
-
-
 
   // By default, Bootstrap doesn't auto close popover after appearing in the page
   // resulting other popover overlap each other. Doing this will auto dismiss a popover
@@ -207,26 +154,5 @@
 
     });
   });
-
-
-
-  // Select2 Initialize
-  // Select2 without the search
-  if($().select2) {
-    $('.select2').select2({
-      minimumResultsForSearch: Infinity
-    });
-
-    // Select2 by showing the search
-    $('.select2-show-search').select2({
-      minimumResultsForSearch: ''
-    });
-
-    // Select2 with tagging support
-    $('.select2-tag').select2({
-      tags: true,
-      tokenSeparators: [',', ' ']
-    });
-  }
 
 });
