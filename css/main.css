@@ -5,6 +5,20 @@
     --dark: #005234;
 }
 
+/* Login page */
+.bg-br-primary {
+    background-image: linear-gradient(120deg, var(--dark) 0%, var(--primary) 100%) !important;
+}
+
+#btn-login {
+    background: var(--light);
+    border: none;
+}
+
+#btn-login:hover {
+    background: var(--primary);
+}
+
 /* Logotipo en Navbar (Left sidebar) */
 img#logo {
     width: 150px;
