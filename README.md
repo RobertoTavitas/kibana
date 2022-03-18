@@ -15,6 +15,8 @@
     ROLES & PERMISSIONS: ReadAll, Monitor, KibanaUser, KibanaReader
 
 ## Tableros
-    1 Kardex - Tablero CFE copia Roberto
-    2 Mantenimiento Preventivo - Dummy
-    3 Tickets - Dummy
+	1 kpi kardex - charts localidad contrato backup status soporte
+    2 Kardex - Tablero CFE copia Roberto
+    3 Mantenimiento Preventivo - Dummy
+    4 Tickets - Dummy
+	
