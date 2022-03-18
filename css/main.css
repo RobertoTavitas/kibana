@@ -5,44 +5,26 @@
     --dark: #005234;
 }
 
-/* Login page */
-.bg-br-primary {
-    background-image: linear-gradient(120deg, var(--dark) 0%, var(--primary) 100%) !important;
-}
-
-#btn-login {
-    background: var(--light);
-    border: none;
-}
-
-#btn-login:hover {
-    background: var(--primary);
-}
-
-/* Logotipo en Navbar (Left sidebar) */
-img#logo {
-    width: 150px;
-    height: 65px;
-}
-
-/* Iframes */
-iframe#cfe, iframe {
+/* Tableros */
+iframe {
     width: 100%;
-    height: 150vh;
     margin: 30px auto;
     border: none;
     border-radius: 10px;
 }
 
-/* Left Sidebar */
-.br-sideleft{
-    background-image: linear-gradient(120deg, var(--dark) 0%, var(--primary) 100%);
+iframe#tablaKardex {
+    height: 295vh;
 }
 
-.br-menu-link.active {
-    background: var(--light) !important;
+iframe#kpiKardex {
+    height: 90vh;
 }
 
-.br-menu-link:hover, .br-menu-link:focus {
-    background: var(--primary) !important;
+iframe#mtoPreventivo {
+    height: 200vh;
+}
+
+iframe#tickets {
+    height: 200vh;
 }

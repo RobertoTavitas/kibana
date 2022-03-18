@@ -1,0 +1,14 @@
+@import 'main.css';
+
+.bg-br-primary {
+    background-image: linear-gradient(120deg, var(--dark) 0%, var(--primary) 100%) !important;
+}
+
+#btn-login {
+    background: var(--light) !important;
+    border: none !important;
+}
+
+#btn-login:hover {
+    background: var(--primary) !important;
+}

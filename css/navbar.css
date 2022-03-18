@@ -1,0 +1,7 @@
+@import 'main.css';
+
+/* Logotipo en Navbar (Left sidebar) */
+img#logo {
+    width: 150px;
+    height: 65px;
+}

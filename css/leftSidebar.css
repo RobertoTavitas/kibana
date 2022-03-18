@@ -1,0 +1,14 @@
+@import 'main.css';
+
+/* Left Sidebar */
+.br-sideleft{
+    background-image: linear-gradient(120deg, var(--dark) 0%, var(--primary) 100%);
+}
+
+.br-menu-link.active {
+    background: var(--light) !important;
+}
+
+.br-menu-link:hover, .br-menu-link:focus {
+    background: var(--primary) !important;
+}
