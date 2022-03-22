@@ -20,3 +20,15 @@
     3 Mantenimiento Preventivo - Dummy
     4 Tickets - Dummy
 	
+# Pendientes
+## Cambios Solicitados Samuel 22/03/2022
+    Traducir textos a español (títulos y subtítulos)
+    En los Dashboard cambiar los porcentajes por cantidades
+
+## Responsive Design
+    Revisar el diseño responsivo de la app:
+    Laptop 15 pulgadas
+
+## Deploy a producción
+    Elegir un servidor
+    Ver disponibilidad y cotización del dominio
