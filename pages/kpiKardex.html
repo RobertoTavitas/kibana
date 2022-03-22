@@ -129,7 +129,7 @@
               <ul class="list-unstyled user-profile-nav">
                 <li><a href=""><i class="icon ion-ios-person"></i> Edit Profile</a></li>
                 <li><a href=""><i class="icon ion-ios-gear"></i> Settings</a></li>
-                <li><a href=""><i class="icon ion-power"></i> <button onclick="cerrarSesion()">cerrar sesion</button></a></li>
+                <li><a href=""><i class="icon ion-power"></i> <button onclick="cerrarSesion(e)">cerrar sesion</button></a></li>
               </ul>
             </div><!-- dropdown-menu -->
           </div><!-- dropdown -->
@@ -206,8 +206,9 @@
 
     <!-- Cerrar sesión -->
     <script>
-      function cerrarSesion() {
+      function cerrarSesion(e) {
             document.cookie = "security_authentication=; max-age=0 path=/";
+            document.preventDefault()
         }
     </script>
   </body>
