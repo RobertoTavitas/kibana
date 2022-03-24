@@ -13,18 +13,110 @@ iframe {
     border-radius: 10px;
 }
 
-iframe#tablaKardex {
-    height: 295vh;
-}
-
 iframe#kpiKardex {
     height: 90vh;
 }
 
+iframe#tablaKardex {
+    height: 295vh;
+}
+
 iframe#mtoPreventivo {
-    height: 200vh;
+    height: 88vh;
 }
 
 iframe#tickets {
     height: 200vh;
+}
+
+/* ---------- Responsive Dashboards ---------- */
+/* Laptop big screen */
+@media screen and (max-width: 1440px) {
+    iframe#kpiKardex {
+        height: 95vh;
+    }
+
+    iframe#tablaKardex {
+        height: 303vh;
+    }
+
+    iframe#mtoPreventivo {
+        height: 90vh;
+    }
+}
+
+/* Laptop mid screen */
+@media screen and (max-width: 1280px) {
+    iframe#kpiKardex {
+        height: 105vh;
+    }
+
+    iframe#tablaKardex {
+        height: 340vh;
+    }
+
+    iframe#mtoPreventivo {
+        height: 100vh;
+    }
+}
+
+/* Ipad */
+@media screen and (max-width: 810px) {
+    iframe#kpiKardex {
+        height: 160vh;
+    }
+
+    iframe#tablaKardex {
+        height: 256vh;
+    }
+
+    iframe#mtoPreventivo {
+        height: 80vh;
+    }
+}
+
+/* Ipad Mini */
+@media screen and (max-width: 768px) {
+    iframe#kpiKardex {
+        height: 169vh;
+    }
+
+    iframe#tablaKardex {
+        height: 270vh;
+    }
+
+    iframe#mtoPreventivo {
+        height: 84vh;
+    }
+}
+
+/* Iphone 11 */
+@media screen and (max-width: 375px) {
+    iframe#kpiKardex {
+        height: 213vh;
+    }
+
+    iframe#tablaKardex {
+        height: 341vh;
+    }
+
+    iframe#mtoPreventivo {
+        height: 107vh;
+    }
+}
+
+/* Other phones */
+/* Iphone 11 */
+@media screen and (max-width: 360px) {
+    iframe#kpiKardex {
+        height: 227vh;
+    }
+
+    iframe#tablaKardex {
+        height: 365vh;
+    }
+
+    iframe#mtoPreventivo {
+        height: 114vh;
+    }
 }
