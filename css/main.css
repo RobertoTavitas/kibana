@@ -46,6 +46,21 @@ iframe#tickets {
 }
 
 /* Laptop mid screen */
+@media screen and (max-width: 1366px) {
+    iframe#kpiKardex {
+        height: 136vh;
+    }
+
+    iframe#tablaKardex {
+        height: 442vh;
+    }
+
+    iframe#mtoPreventivo {
+        height: 132vh;
+    }
+}
+
+/* Laptop small screen */
 @media screen and (max-width: 1280px) {
     iframe#kpiKardex {
         height: 105vh;
