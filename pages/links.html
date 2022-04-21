@@ -22,13 +22,13 @@
      <link rel="stylesheet" href="../css/main.css">
      <link rel="stylesheet" href="../css/navbar.css">
      <link rel="stylesheet" href="../css/leftSidebar.css">
+     <link rel="stylesheet" href="../css/tablero.css">
 
      <!-- Favicon -->
      <link rel="shortcut icon" href="/assets/logo.png" type="image/png" sizes="32*32">
   </head>
 
   <body>
-
     <!-- ########## START: LEFT PANEL ########## -->
     <div class="br-logo"><a href=""><span><img id="logo" src="https://www.cfe.mx/cdn/2019/assets/images/logo.png" alt=""></span></a></div>
     <div class="br-sideleft overflow-y-auto">
@@ -136,7 +136,7 @@
               <ul class="list-unstyled user-profile-nav">
                 <li><a href=""><i class="icon ion-ios-person"></i> Edit Profile</a></li>
                 <li><a href=""><i class="icon ion-ios-gear"></i> Settings</a></li>
-                <li><a href=""><i class="icon ion-power"></i> Sign Out</a></li>
+                <li><a href=""><i class="icon ion-power"></i> <button onclick="cerrarSesion(e)">cerrar sesion</button></a></li>
               </ul>
             </div><!-- dropdown-menu -->
           </div><!-- dropdown -->
@@ -192,10 +192,36 @@
 
     <!-- ########## START: MAIN PANEL ########## -->
     <div class="br-mainpanel">
-      
-      <div class="br-pagebody mg-t-15 pd-x-30">
-        <iframe id="mtoPreventivo" src="https://search-cfe-domain01-sjdnfnsswwrzyll4p3rstbud5m.us-east-2.es.amazonaws.com/_plugin/kibana/app/dashboards?security_tenant=global#/view/cdc7f890-a95d-11ec-8a21-47ffe3111bb1?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))&show-query-input=true&show-time-filter=true" height="600" width="800"></iframe>
-      </div><!-- br-pagebody -->
+
+        <section id="main-content">
+            <div class="section-title">Enlace a Tableros</div>
+            <div class="tablero">
+                <div class="tablero-item">
+                    <a href="https://search-cfe-domain01-sjdnfnsswwrzyll4p3rstbud5m.us-east-2.es.amazonaws.com/_plugin/kibana/app/dashboards?security_tenant=global#/view/02fe34b0-a702-11ec-94db-3b071e1dca47?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))&show-query-input=true&show-time-filter=true" target="_blank">
+                        <i class="fa fa-bar-chart"></i>
+                        <br> Kpi Kardex
+                    </a>
+                </div>
+                <div class="tablero-item">
+                    <a href="https://search-cfe-domain01-sjdnfnsswwrzyll4p3rstbud5m.us-east-2.es.amazonaws.com/_plugin/kibana/app/dashboards?security_tenant=global#/view/27f44060-a578-11ec-8a21-47ffe3111bb1?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!f%2Cvalue%3A900000)%2Ctime%3A(from%3Anow-7d%2Cto%3Anow))&show-query-input=true&show-time-filter=true" target="_blank">
+                        <i class="fa fa-bar-chart"></i>
+                        <br> Tabla Kardex
+                    </a>
+                </div>
+                <div class="tablero-item">
+                    <a href="https://search-cfe-domain01-sjdnfnsswwrzyll4p3rstbud5m.us-east-2.es.amazonaws.com/_plugin/kibana/app/dashboards?security_tenant=global#/view/cdc7f890-a95d-11ec-8a21-47ffe3111bb1?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))&show-query-input=true&show-time-filter=true" target="_blank">
+                        <i class="fa fa-bar-chart"></i>
+                        <br> Mto. Preventivo
+                    </a>
+                </div>
+                <div class="tablero-item">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-bar-chart"></i>
+                        <br> Tickets
+                    </a>
+                </div>
+            </div>
+        </section>
 
       <footer class="br-footer">
           <div class="mg-b-2">Copyright &copy; 2022. Roberto Tavitas. All Rights Reserved.</div>
@@ -210,5 +236,7 @@
     <script src="../lib/jquery-ui/jquery-ui.js"></script>
 
     <script src="../js/bracket.js"></script>
+
+   
   </body>
 </html>
